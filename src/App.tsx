@@ -1,5 +1,7 @@
 import './App.css'
 import { Counter } from './components/Counter'
+import { LoginPage } from './components/LoginPage'
+import { AuthProvider } from './context/AuthContext'
 import { BasicFunctions } from './typescript/BasicFunctions'
 import { BasicTypes } from './typescript/BasicTypes'
 import { ObjectLiterals } from './typescript/ObjectLiterals'
@@ -8,13 +10,16 @@ import { ObjectLiterals } from './typescript/ObjectLiterals'
 function App() {
 
   return (
+    <AuthProvider>
     <div>
       <h1>React + Vite + TypeScript</h1>
-      <BasicTypes />
-      <BasicFunctions />
-      <ObjectLiterals />
-      <Counter />
+      {/* <BasicTypes /> */}
+        {/* <ObjectLiterals /> */}
+        {/* {BasicFunctions} */}
+        {/* <Counter /> */}
+      <LoginPage />
     </div>
+    </AuthProvider>
   )
 }
 

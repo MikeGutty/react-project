@@ -1,9 +1,9 @@
 import { createContext, useContext, useEffect, useState, type PropsWithChildren } from "react";
 
 enum AuthStatus {
-    'checking' = 'checking',
-    'authenticated' = 'authenticated',
-    'unauthenticated' = 'unauthenticated',
+  'checking' = 'checking',
+  'authenticated' = 'authenticated',
+  'unauthenticated' = 'unauthenticated',
 }
 
 interface AuthState {
@@ -29,6 +29,7 @@ export const AuthContext = createContext({} as AuthState);
 export const useAuthContext = () => useContext(AuthContext);
 
 export const AuthProvider = ({ children }: PropsWithChildren) => {
+
   const [status, setStatus] = useState(AuthStatus.checking);
   const [user, setUser] = useState<User>()
 
