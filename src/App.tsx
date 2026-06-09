@@ -1,7 +1,8 @@
 import './App.css'
+import { FormsPage } from './components/FormsPage'
 // import { Counter } from './components/Counter'
 // import { LoginPage } from './components/LoginPage'
-import { UsersPage } from './components/UsersPage'
+// import { UsersPage } from './components/UsersPage'
 import { AuthProvider } from './context/AuthContext'
 // import { BasicFunctions } from './typescript/BasicFunctions'
 // import { BasicTypes } from './typescript/BasicTypes'
@@ -15,11 +16,12 @@ function App() {
     <div>
       <h1>React + Vite + TypeScript</h1>
       {/* <BasicTypes /> */}
-        {/* <ObjectLiterals /> */}
-        {/* {BasicFunctions} */}
-        {/* <Counter /> */}
+      {/* <ObjectLiterals /> */}
+      {/* {BasicFunctions} */}
+      {/* <Counter /> */}
       {/* <LoginPage /> */}
-      <UsersPage />
+      {/* <UsersPage /> */}
+      <FormsPage />
     </div>
     </AuthProvider>
   )
